@@ -3,7 +3,7 @@ const nunjucks = require('nunjucks')
 
 const app = express()
 
-nunjucks.configure('views', {
+nunjucks.configure('src/views', {
   autoescape: true,
   express: app,
   watch: true
