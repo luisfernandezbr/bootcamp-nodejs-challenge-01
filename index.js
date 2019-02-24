@@ -12,4 +12,8 @@ nunjucks.configure('views', {
 app.use(express.urlencoded({ extended: false }))
 app.set('view engine', 'njk')
 
+app.get('/', (req, res) => {
+  return res.render('home')
+})
+
 app.listen(3000)
